@@ -1,0 +1,4 @@
+# Capital-One-Mind-Sumo-Challenge
+Use transaction data to categorize clients
+
+The goal was to output a list of subscription IDs, their subscription type and the duration of their subscription based on a provided .CSV file. The hardest part of this solution was organizing the data in a way that is efficient because there are 780,000 lines within the .CSV file-- making for a very tedious task. I chose to wrap a custom object that held important information pulled from the .CSV in a comparable interface which allowed to me sort using (by default) merge sort. After sorting the data by SubID, the easiest thing to do I thought was to group the data into a list of lists so I could easily access info from it. I was then able to calculate the expended time for each subscription as well as the frequency of each subscription. From here, it was a matter of printing the data and determining the subscription type based off of raw numbers.
